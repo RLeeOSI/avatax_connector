@@ -2,30 +2,30 @@
     <div class="oe_row oe_spaced">
         <h2 class="oe_slogan">Sales Tax Calculation Made Easy</h2>
         <h3 class="oe_slogan">Avatax module automates the complex task of sales tax calculation with ease</h3>
-		<div class="oe_span4">
-			<img class="oe_picture" src="SalesTax.png">
-		</div>
-		<div class="oe_span4">
-			<img class="oe_picture" src="Refunds.png">
-		</div>
-		<div class="oe_span4">
-			<img class="oe_picture" src="AddressValidation.png">
-		</div>
+        <div class="oe_span4">
+            <img class="oe_picture" src="SalesTax.png">
+        </div>
+        <div class="oe_span4">
+            <img class="oe_picture" src="Refunds.png">
+        </div>
+        <div class="oe_span4">
+            <img class="oe_picture" src="AddressValidation.png">
+        </div>
         <h2 class="oe_slogan">Overview</h2>
         <div class="oe_span12">
             <p>
-				Odoo provides integration with AvaTax, a tax solution software by Avalara which includes sales tax calculation for all US states and territories and all Canadian provinces and territories (including GST, PST, and HST). This module is capable of automatically detecting origin (Output Warehouse) and destination (Client Address), then calculating and reporting taxes to the user's Avalara account as well as a recording the correct sales taxes for the validated addresses within Odoo ERP.
+                Odoo provides integration with AvaTax, a tax solution software by Avalara which includes sales tax calculation for all US states and territories and all Canadian provinces and territories (including GST, PST, and HST). This module is capable of automatically detecting origin (Output Warehouse) and destination (Client Address), then calculating and reporting taxes to the user's Avalara account as well as a recording the correct sales taxes for the validated addresses within Odoo ERP.
             <p>
-				This module utilizes core certified modules from Odoo as dependencies. The following dependencies will be installed: base, sale, account, account_accountant, and stock modules. The module also has sandbox data for configuration with demo deployments as needed. Once configured, the module operates in the background and performs calculations and reporting seamlessly to the AvaTax server. Account information to access the Avatax dashboard can be obtained through the Avalara website here:
+                This module utilizes core certified modules from Odoo as dependencies. The following dependencies will be installed: base, sale, account, account_accountant, and stock modules. The module also has sandbox data for configuration with demo deployments as needed. Once configured, the module operates in the background and performs calculations and reporting seamlessly to the AvaTax server. Account information to access the Avatax dashboard can be obtained through the Avalara website here:
                 <center>https://www.avalara.com/products/avatax/</center>
             <p>
-				This guide includes instructions for the following elements:
+                This guide includes instructions for the following elements:
                 <ul>
                     <li>Activating your organization's AvaTax account and downloading the product</li>
                     <li>Entering the AvaTax credentials into your Odoo database and configuring it to use AvaTax services and features within Odoo</li>
                 </ul>
             <p>
-				<b>Note:</b> Test the module before deploying in live environment. All changes to the AvaTax settings must be performed by a user with administrative access rights.
+                <b>Note:</b> Test the module before deploying in live environment. All changes to the AvaTax settings must be performed by a user with administrative access rights.
         </div>
     </div>
 </section>
@@ -86,22 +86,22 @@
                 </ul>
                 <h4><b>Address Validation</b></h4>
                 <ul type="disc">
-					<li><b>Disable Address Validation</b></li>
+                    <li><b>Disable Address Validation</b></li>
                     <li><b>Address Validation on save for customer profile</b> -- automatically attempts to validate on creation and update of customer profile, last validation date will be visible and stored</li>
                     <li><b>Force Address Validation</b> -- if validation for customer is required but not valid, the validation will be forced</li>
                     <li><b>Return validation results in upper case</b> -- validation results will return in upper case form</li>
-					<li><b>Automatically generate customer code</b> -- generates a customer code on creation and update of customer profile</li>
+                    <li><b>Automatically generate customer code</b> -- generates a customer code on creation and update of customer profile</li>
                 </ul>
                 <h4><b>Avalara Submissions/Transactions</b></h4>
                 <ul type="disc">
-					<li><b>Disable Avalara Tax Commit</b> -- validated invoices will not be sent to Avalara</li>
+                    <li><b>Disable Avalara Tax Commit</b> -- validated invoices will not be sent to Avalara</li>
                     <li><b>Enable UPC Taxability</b> -- this will transmit Odoo's product ean13 number instead of its Internal Reference. If there is no ean13 then the Internal Reference will be sent automatically.</li>
                 </ul>
                 <h4><b>Countries</b></h4>
                 <ul type="disc">
                     <li>
                         <p>
-							Add or remove applicable countries -- the calculator will not calculate for a country unless it's on the list.
+                            Add or remove applicable countries -- the calculator will not calculate for a country unless it's on the list.
                     </li>
                 </ul>
         </div>
@@ -120,10 +120,10 @@
                 <h4><b>Configure Exemption Codes</b></h4>
                 <p>
                     Exemption codes are allowed for users where they may apply (ex. Government entities). Navigate to: Accounting >> Configuration >> AvaTax >> Exemption Code 
-				<p>
-					The module is installed with 16 predefined exemption codes. You can add, remove, and modify exemption codes.
+                <p>
+                    The module is installed with 16 predefined exemption codes. You can add, remove, and modify exemption codes.
         </div>
-	</div>
+    </div>
 </section>
 <section class="oe_container oe_dark">
     <div class="oe_row">
@@ -131,9 +131,9 @@
             <p class='oe_mt32'>
                 <h4><b>Product Tax Codes</b></h4>
                 <p>
-					Create product tax codes to assign to products and/or product categories. Navigate to: Accounting >> Configuration >> AvaTax >> Product Tax Codes 
-				<p>
-					From here you can add, remove, and modify the product tax codes.
+                    Create product tax codes to assign to products and/or product categories. Navigate to: Accounting >> Configuration >> AvaTax >> Product Tax Codes 
+                <p>
+                    From here you can add, remove, and modify the product tax codes.
         </div>
         <div class="oe_span6">
             <img class="oe_picture oe_screenshot" src="ATC5.png">
@@ -271,7 +271,7 @@
                 <ul type="disc">
                     <li>Navigate to: Inventory >> Configuration >> Warehouse Management >> Warehouses</li>
                     <li>Select the warehouse associated with your company</li>
-					<li>Under <b>Address</b>, follow the link to be directed to your warehouse profile</li>
+                    <li>Under <b>Address</b>, follow the link to be directed to your warehouse profile</li>
         </div>
         <div class="oe_span6">
             <img class="oe_picture oe_screenshot" src="ATC14.png">
@@ -332,7 +332,6 @@
                     <li>Enter Customer Address</li>
                     <li>Under AvaTax >> Validation, click <b>Validate</b> button</li>
         </div>
-
     </div>
 </section>
 <section class="oe_container oe_dark">
@@ -348,6 +347,36 @@
         </div>
     </div>
 </section>
+<!-- TODO: add multicustomer validation
+<section class="oe_container oe_dark">
+    <div class="oe_row">
+        <div class="oe_span6">
+            <img class="oe_picture oe_screenshot" src="ATC25.png">
+        </div>
+        <div class="oe_span6">
+            <p class='oe_mt32'>
+                <h4><b>Validate Multiple Customers</b></h4>
+                <ul type="disc">
+                    <li>Multiple existing customer addresses can be validated at one time</li>
+                    <li>In the Contacts list view, select multiple customers with checkboxes.</li>
+                    <li>Under the Action menu, click <b>Address Validation</b>.</li>
+        </div>
+    </div>
+</section>
+<section class="oe_container oe_dark">
+    <div class="oe_row">
+        <div class="oe_span6">
+            <p class='oe_mt32'>
+                <h4><b>Tax Exemption Status</b></h4>
+                <p>
+                    If the customer is tax exempt, check the box under AvaTax >> Tax Exemption >> Is Tax Exempt and select the desired Tax Exempt Code from the dropdown menu.
+        </div>
+        <div class="oe_span6">
+            <img class="oe_picture oe_screenshot" src="ATC12.png">
+        </div>
+    </div>
+</section>
+-->
 <section class="oe_container oe_dark">
     <div class="oe_row">
         <div class="oe_span6">
@@ -359,7 +388,6 @@
                 <p>
                     If the customer is tax exempt, check the box under AvaTax >> Tax Exemption >> Is Tax Exempt and select the desired Tax Exempt Code from the dropdown menu.
         </div>
-
     </div>
 </section>
 <section class="oe_container oe_dark">
@@ -370,9 +398,9 @@
                 <p>
                     The AvaTax module is integrated into Sales Invoices and is applied to each transaction. The transaction log in the AvaTax dashboard shows the invoice details and displays whether the transaction is in an uncommitted or committed status. A validated invoice will have a <b>Committed</b> status and a cancelled invoice will have a <b>Voided</b> status.
                 <p>
-					The module will check if there is a selected warehouse and will automatically determine the address of the warehouse and the origin location. If no address is assigned to the warehouse, the company address is used.
+                    The module will check if there is a selected warehouse and will automatically determine the address of the warehouse and the origin location. If no address is assigned to the warehouse, the company address is used.
                 <p>
-					Discounts are handled when they are enabled in Odoo's settings. They are calculated as a net deduction on the line item cost before the total is sent to AvaTax.
+                    Discounts are handled when they are enabled in Odoo's settings. They are calculated as a net deduction on the line item cost before the total is sent to AvaTax.
             </div>
         </div>
     </div>
@@ -403,16 +431,15 @@
                 <h4><b>Validate Invoice</b></h4>
 
                 <ul type="disc">
-					<li>Ensure that <b>Tax based on shipping address</b> is checked.</li>
-					<li>Line items should have AVATAX selected under <b>Taxes</b> for internal records.</li>
+                    <li>Ensure that <b>Tax based on shipping address</b> is checked.</li>
+                    <li>Line items should have AVATAX selected under <b>Taxes</b> for internal records.</li>
                     <li>To complete the invoice, click the <b>Validate</b> button.</li>
-					<li>The sale order will now appear in the AvaTax dashboard.</li>
+                    <li>The sale order will now appear in the AvaTax dashboard.</li>
         </div>
     </div>
 </section>
 <section class="oe_container oe_dark">
     <div class="oe_row">
-
         <div class="oe_span6">
             <p class='oe_mt32'>
                 <h4><b>Register Payment</b></h4>
@@ -421,6 +448,20 @@
         </div>
         <div class="oe_span6">
             <img class="oe_picture oe_screenshot" src="ATC18.png">
+        </div>
+    </div>
+</section>
+<section class="oe_container oe_dark">
+    <div class="oe_row">
+        <div class="oe_span6">
+            <img class="oe_picture oe_screenshot" src="ATC27.png">
+        </div>
+        <div class="oe_span6">
+            <p class='oe_mt32'>
+                <h4><b>Manual Update</b></h4>
+                <ul type="disc">
+                    <li>Tax is calculated automatically when the invoice is validated, but it can be updated manually as well</li>
+                    <li>Under the Action menu, click <b>Update taxes with AvaTax</b>.</li>
         </div>
     </div>
 </section>
@@ -460,7 +501,7 @@
                 <h4><b>Create Credit Note</b></h4>
                 <ul type="disc">
                     <li>Under Credit Method, select <b>Create a draft credit note</b>.</li>
-					<li>Enter a reason.</li>
+                    <li>Enter a reason.</li>
                     <li>Click <b>Add Credit Note</b> button.</li>
                 </ul>
                 <b> Note:</b> You will be taken to the Credit Notes list view
@@ -500,15 +541,30 @@
 </section>
 <section class="oe_container oe_dark">
     <div class="oe_row">
+        <div class="oe_span6">
+            <img class="oe_picture oe_screenshot" src="ATC28.png">
+        </div>
+        <div class="oe_span6">
+            <p class='oe_mt32'>
+                <h4><b>Manual Update</b></h4>
+                <ul type="disc">
+                    <li>Tax is calculated automatically when the refund is validated, but it can be updated manually as well</li>
+                    <li>Under the Action menu, click <b>Update taxes with AvaTax</b>.</li>
+        </div>
+    </div>
+</section>
+
+<section class="oe_container oe_dark">
+    <div class="oe_row">
         <div class="oe_row oe_spaced">
             <h2 class="oe_slogan">Sales Orders</h2>
             <div class="oe_span12">
                 <p>
                     The AvaTax module is integrated into Sales Orders and allows computation of taxes. Sales order transactions do not appear in the in the AvaTax interface.
                 <p>
-					The information placed in the sales order will automatically pass to the invoice on the Avalara server and can be viewed in the AvaTax control panel.
+                    The information placed in the sales order will automatically pass to the invoice on the Avalara server and can be viewed in the AvaTax control panel.
                 <p>
-					Discounts are handled when they are enabled in Odoo's settings. They will be reported as a net deduction on the line item cost.
+                    Discounts are handled when they are enabled in Odoo's settings. They will be reported as a net deduction on the line item cost.
             </div>
         </div>
     </div>
@@ -534,12 +590,29 @@
             <p class='oe_mt32'>
                 <h4><b>Compute Taxes with AvaTax</b></h4>
                 <ul type="disc">
-                    <li>The module will calculate tax when the sales order is confirmed, or by navigating to Action >> Update taxes with Avatax. At this step, the sales order will retrieve the tax amount from Avalara but will not report the transaction to the AvaTax dashboard. Only invoice, refund, and payment activity are reported to the dashboard.</li>
-                    <li>The module will check if there is a selected warehouse and will automatically determine the address of the warehouse and the origin location. If no address is assigned to the warehouse the module will automatically use the address of the company as its origin. Location code will automatically populate with the warehouse code but can be modified if needed.</li>
+                    <li>The module will calculate tax when the sales order is confirmed.</li>
+                    <li>At this step, the sales order will retrieve the tax amount from Avalara but will not report the transaction to the AvaTax dashboard. Only invoice, refund, and payment activity are reported to the dashboard.</li>
+                    <li>The module will check if there is a selected warehouse and will automatically determine the address of the warehouse and the origin location.</li>
+                    <li>If no address is assigned to the warehouse the module will automatically use the address of the company as its origin.</li>
+                    <li>Location code will automatically populate with the warehouse code but can be modified if needed.</li>
                 </ul>
         </div>
         <div class="oe_span6">
             <img class="oe_picture oe_screenshot" src="ATC24.png">
+        </div>
+    </div>
+</section>
+<section class="oe_container oe_dark">
+    <div class="oe_row">
+        <div class="oe_span6">
+            <img class="oe_picture oe_screenshot" src="ATC26.png">
+        </div>
+        <div class="oe_span6">
+            <p class='oe_mt32'>
+                <h4><b>Manual Update</b></h4>
+                <ul type="disc">
+                    <li>Tax is calculated automatically when the sales order is confirmed, but it can be done manually as well</li>
+                    <li>Under the Action menu, click <b>Update taxes with AvaTax</b>.</li>
         </div>
     </div>
 </section>

@@ -38,7 +38,8 @@ class AvalaraSalestax(models.Model):
 
     account_number = fields.Char('Account Number', required=True, help="Account Number provided by AvaTax")
     license_key = fields.Char('License Key', required=True, help="License Key provided by AvaTax")
-    service_url = fields.Char('Service URL', required=True, help="The url to connect with")
+    service_url = fields.Selection([('https://avatax.avalara.net','Production'),('https://development.avalara.net','Sandbox'),],
+            'Service URL', default='https://avatax.avalara.net', required=True, help="The URL to connect to AvaTax API")
     date_expiration = fields.Date('Service Expiration Date', readonly=True, help="The expiration date of the service")
     request_timeout = fields.Integer('Request Timeout', default=300, help="Defines AvaTax request time out length, AvaTax best practices prescribes default setting of 300 seconds")
     company_code = fields.Char('Company Code', required=True, help="The company code as defined in the Admin Console of AvaTax")
